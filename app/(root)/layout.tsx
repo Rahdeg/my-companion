@@ -1,6 +1,13 @@
 import NavBar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
 import { checkSubscription } from "@/lib/subscription";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: 'My Companion',
+  description: 'Ai Companion APP',
+}
 
 const RootLayout = async ({
   children
